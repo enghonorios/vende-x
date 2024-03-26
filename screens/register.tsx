@@ -1,6 +1,6 @@
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 interface FormValues {
   email: string;
@@ -37,17 +37,17 @@ const register = () => {
           <Form>
             <View>
               <Text>Email</Text>
-              <Field type="email" name="email" />
+              <Field type="email" name="email" as={TextInput} />
               <ErrorMessage name="email" component={Text} />
             </View>
             <View>
               <Text>Senha</Text>
-              <Field type="password" name="password" />
+              <Field type="password" name="password" as={TextInput} />
               <ErrorMessage name="password" component={Text} />
             </View>
             <View>
               <Text>Confirme a Senha</Text>
-              <Field type="password" name="confirmPassword" />
+              <Field type="password" name="confirmPassword" as={TextInput} />
               <ErrorMessage name="confirmPassword" component={Text} />
             </View>
             <TouchableOpacity onPress={() => handleSubmit()}>

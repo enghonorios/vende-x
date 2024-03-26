@@ -33,7 +33,7 @@ const login = () => {
           <View>
             <View>
               <Text>Email</Text>
-              <Field type="email" name="email" as={TextInput} />
+              <Field type="email" name="e-mail" as={TextInput} />
               <ErrorMessage name="email" component={Text} />
             </View>
             <View>

@@ -8,7 +8,7 @@ interface FormValues {
   confirmPassword: string;
 }
 
-const register = () => {
+function register() {
   const initialValues: FormValues = { email: '', password: '', confirmPassword: '' };
 
   const handleSubmit = (values: FormValues) => {
@@ -50,7 +50,7 @@ const register = () => {
               <Field type="password" name="confirmPassword" as={TextInput} />
               <ErrorMessage name="confirmPassword" component={Text} />
             </View>
-            <TouchableOpacity onPress={() => handleSubmit()}>
+            <TouchableOpacity onPress={() =>handleSubmit()}>
               <Text>Registrar</Text>
             </TouchableOpacity>
           </Form>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import Login from './screens/login'; // Importe o componente de login
-import Register from './screens/register'; // Importe o componente de registro
+import Register from './screens/register';
 import Location from './tools/location'; // Importe o componente de localização
 
 const App = () => {

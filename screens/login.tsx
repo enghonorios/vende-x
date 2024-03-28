@@ -7,7 +7,7 @@ interface FormValues {
   password: string;
 }
 
-const login = () => {
+function login () {
   const initialValues: FormValues = { email: '', password: '' };
 
   const validate = (values: FormValues) => {

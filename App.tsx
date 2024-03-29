@@ -1,4 +1,3 @@
-import React from 'react';
 import { View } from 'react-native';
 import Login from './screens/login'; // Importe o componente de login
 import Register from './screens/register';

@@ -1,4 +1,4 @@
-import { ErrorMessage, Field, Formik } from 'formik';
+import { ErrorMessage, Field, Form, Formik } from 'formik';
 import React from 'react';
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 
@@ -30,7 +30,7 @@ function login () {
       <Text>Login</Text>
       <Formik initialValues={initialValues} onSubmit={handleSubmit} validate={validate}>
         {({ handleSubmit }) => (
-          <View>
+          <Form>
             <View>
               <Text>Email</Text>
               <Field type="email" name="e-mail" as={TextInput} />
@@ -44,7 +44,7 @@ function login () {
             <TouchableOpacity onPress={() => handleSubmit()}>
               <Text>Entrar</Text>
             </TouchableOpacity>
-          </View>
+          </Form>
         )}
       </Formik>
       <Text>Não tem uma conta? <TouchableOpacity><Text>Registre-se</Text></TouchableOpacity></Text>
